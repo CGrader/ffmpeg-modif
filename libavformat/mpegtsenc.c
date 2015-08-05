@@ -38,12 +38,19 @@
 /*********************************************/
 /* mpegts section writer */
 
+/* Estrutura que representa uma seção de PSI ou SIe contém informação dos PIDS das tabelas, status
+do continuity conunter e um ponteiro pra variável opaque da estrutura AVFormatContext */
+
+
 typedef struct MpegTSSection {
     int pid;
     int cc;
     void (*write_packet)(struct MpegTSSection *s, const uint8_t *packet);
     void *opaque;
 } MpegTSSection;
+
+/* Representa um serviço e contém uma MpegTSSection pra sua PMT, um ID do serviço, o PCR PID e variáveis
+de controle p/ gerenciar a taxa de transmissão do PCR. */
 
 typedef struct MpegTSService {
     MpegTSSection pmt; /* MPEG2 pmt table context */
@@ -261,6 +268,9 @@ static int mpegts_write_section1(MpegTSSection *s, int tid, int id,
 #define PAT_RETRANS_TIME 100
 #define PCR_RETRANS_TIME 20
 // TODO Add here the new tables retransmission rate
+
+/* Representa um ES que é enviado através do TS; tem um ponteiro pro serviço correspondente, o PID da stream,
+um continuity counter, os valores atuais das PTS e DTS da stream e os dados propriamente ditos */ 
 
 typedef struct MpegTSWriteStream {
     struct MpegTSService *service;
