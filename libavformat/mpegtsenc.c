@@ -655,7 +655,7 @@ static void mpegts_write_nit(AVFormatContext *s)
 	sys_mgmt_desc_length_ptr = q;
 	*q++; //length, filled later
 	*q++ = 0x03; //Bcast flag '00' Open TV, Bcast ID: '000011'
-	*q++ = 0x01; //Read from RBS1905.ts
+	*q++ = 0x01; //Read from RBS1905.ts //VER ISSO!!!
 
 	//Fill  descriptor length
 	sys_mgmt_desc_length_ptr[0] = q - sys_mgmt_desc_length_ptr - 1;
