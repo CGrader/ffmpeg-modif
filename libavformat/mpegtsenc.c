@@ -696,6 +696,7 @@ static void mpegts_write_nit(AVFormatContext *s)
 	memcpy(q, DEFAULT_NETWORK_NAME, strlen(DEFAULT_NETWORK_NAME));
 	q += strlen(DEFAULT_NETWORK_NAME);
 
+	// transmission_profile: variável criada como modo de se alterar/escolher o número de serviços no TS.
 	switch (ts->transmission_profile) {
 		case 1:
 		default:
