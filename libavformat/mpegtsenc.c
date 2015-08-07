@@ -80,6 +80,8 @@ typedef struct MpegTSWrite {
     MpegTSSection nit; /* MPEG2 nit table */
     MpegTSSection sdt; /* MPEG2 sdt table context */
     MpegTSSection tot; /* MPEG2 sdt table context */
+    //aqui deve ser verificado se todas as tabelas necessárias para o padrão brasileiro já foram inclusas.
+    //pode-se consultar o TCC do Lucas, lembrando que esse já é o arquivo modificado por ele.
     MpegTSService **services;
     int sdt_packet_count;
     int sdt_packet_period;
@@ -328,6 +330,7 @@ static void putstr8(uint8_t **q_ptr, const char *str)
     q += len;
     *q_ptr = q;
 }
+
 
 static void mpegts_write_pat(AVFormatContext *s)
 {
