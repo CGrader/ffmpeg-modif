@@ -18,6 +18,18 @@
  * License along with FFmpeg; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  */
+ 
+ /* Com relação às modificações necessárias para adpatação ao sistema brasileiro de televisão digital,
+ são consultadas para referência as seguintes normas:
+
+ISO/IEC 13818-1: (padrão internacional) Information technology — Generic coding
+of moving pictures and associated audio information: Systems
+
+ABNT NBR 15603-3: Televisão digital terrestre — Multiplexação e serviços de informação (SI) —
+Parte 3: Sintaxes e definições de informação
+estendida do SI   */
+
+ 
 
 #include "libavutil/bswap.h"
 #include "libavutil/crc.h"
