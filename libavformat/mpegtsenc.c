@@ -19,6 +19,12 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  */
  
+ 
+ /* - - - - APARENTEMENTE, O ALVO DAS MODIFICAÇÕES DEVE SER: PMT, PAT, SDT - - - - - */
+ /* - - - - RECOMPILAR FFMPEG PARA TESTAR; A PRINCÍPIO ESTÁ TUDO OK, COM AS PENDÊNCIAS INSTALADAS, BASTA RODAR O
+    - - - - CONFIGURE COM AS MESMAS OPÇÕES UTILIZADAS PELO LUCAS (POR ENQUANTO)  
+ 
+ 
  /* Com relação às modificações necessárias para adpatação ao sistema brasileiro de televisão digital,
  são consultadas para referência as seguintes normas:
 
