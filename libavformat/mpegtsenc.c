@@ -23,6 +23,10 @@
  /* - - - - APARENTEMENTE, O ALVO DAS MODIFICAÇÕES DEVE SER: PMT, PAT, SDT - - - - - */
  /* - - - - RECOMPILAR FFMPEG PARA TESTAR; A PRINCÍPIO ESTÁ TUDO OK, COM AS PENDÊNCIAS INSTALADAS, BASTA RODAR O
     - - - - CONFIGURE COM AS MESMAS OPÇÕES UTILIZADAS PELO LUCAS (POR ENQUANTO)  
+    Na Tapir, todas as dependências estão instaladas, e a princípio a compilação do programa é feita apenas executando
+    "ffmpeg_script.sh" - - - 
+    */
+    
  
  
  /* Com relação às modificações necessárias para adpatação ao sistema brasileiro de televisão digital,
