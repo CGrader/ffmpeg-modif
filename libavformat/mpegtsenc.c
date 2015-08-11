@@ -39,6 +39,8 @@ ABNT NBR 15603-3: Televisão digital terrestre — Multiplexação e serviços d
 Parte 3: Sintaxes e definições de informação
 estendida do SI   */
 
+/* De acordo com a ABNT NBR 15603-2, são obrigatórias em um serviço as seguintes tabelas: 
+PAT,CAT,PMT,NIT (rede atual), SDT (feixe atual (?)), EIT (programa presente e futuro do feixe atual) e TOT.
  
 
 #include "libavutil/bswap.h"
