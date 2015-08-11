@@ -76,6 +76,9 @@ typedef struct MpegTSSection {
 /* Representa um serviço e contém uma MpegTSSection pra sua PMT, um ID do serviço, o PCR PID e variáveis
 de controle p/ gerenciar a taxa de transmissão do PCR. */
 
+/* Pela norma, cada SERVIÇO deve ter uma PMT.  
+   Então, para cada serviço, uma pmt do tipo MpegTSService  */ 
+
 typedef struct MpegTSService {
     MpegTSSection pmt; /* MPEG2 pmt table context */
     int sid;           /* service ID */
