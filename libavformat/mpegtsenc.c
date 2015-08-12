@@ -952,7 +952,8 @@ static int mpegts_write_header(AVFormatContext *s)
 
     if (s->max_delay < 0) /* Not set by the caller */
         s->max_delay = 0;
-
+    //teste
+    printf("mpegts_write_header");
     // round up to a whole number of TS packets
     ts->pes_payload_size = (ts->pes_payload_size + 14 + 183) / 184 * 184 - 14;
 
@@ -994,7 +995,7 @@ static int mpegts_write_header(AVFormatContext *s)
 	case 2:
 		
 	break;
-}
+	}
 
 
 //    for(i = 0;i < ts->final_nb_services; i++) {
